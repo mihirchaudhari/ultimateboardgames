@@ -1,0 +1,38 @@
+<style>
+	/* Main Top Nav stuff */
+	#top-nav {position: sticky; top: 0; z-index: 2}
+	#top-nav ul {margin: 0; padding: 0; list-style: none; background-color: #000e; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); overflow: hidden}
+	#top-nav li {float: left; border-right: 1px solid #fffe}
+	#top-nav a {text-decoration: none}
+	/* Stuff for the 'button' (The text and icon) */
+	#top-nav .button {position: relative; overflow: hidden}
+	#top-nav .button a:hover p {transform: translateY(-64px)}
+	#top-nav .button a:hover i {transform: translateY(-48px) scale(1.5)}
+	#top-nav p {position: relative; font-size: 24px; padding: 16px; color: #fff; font-family: sans-serif; transition: 0.3s}
+	#top-nav i {position: absolute; color: #fff; transition: 0.3s}
+	/* Stuff for the dropdown */
+	#top-nav li:hover .dropdown {height: 36px} /* Manually calculate this, I do not have time for automation */
+	#top-nav .dropdown {position: absolute; top: 100%; height: 0; transition: 0.3s; overflow: hidden;}
+	#top-nav .dropdown a {font-size: 18px; color: #fff; font-family: sans-serif; padding: 8px; background-color: #000e; position: relative; top: 4px}
+</style>
+<ul>
+	<li>
+		<div class="button">
+			<a href="/index.html">
+				<p>HOME</p>
+				<i class="fas fa-home fa-2x" style="left: calc(50% - 18px)"></i>
+			</a>
+		</div>
+	</li>
+	<li>
+		<div class="button">
+			<a href="javascript:void(0)">
+				<p>GAMES</p>
+				<i class="fas fa-dice fa-2x" style="left: calc(50% - 20px)"></i>
+			</a>
+		</div>
+		<div class="dropdown">
+			<a href="#">Terra Mystica</a>
+		</div>
+	</li>
+</ul>
