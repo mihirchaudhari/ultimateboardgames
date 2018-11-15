@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
 /*
  * General Styling
  */
@@ -6,6 +7,10 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0}
 
 #content {overflow: hidden}
 
+/*
+ * Banner Stuff
+ */
 #top-banner {overflow: hidden; position: relative}
 img.banner {display: block; float: right; width: 75%}
-.triangle {float: left; position: absolute; top: 0; bottom: 0; width: 50%; background-color: #00b78f; background-size: cover; clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%)}
+.img-cover.left {float: left; position: absolute; top: 0; bottom: 0; width: 50%; background-size: cover; clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%); box-shadow: inset 1px 0 3px rgba(0, 0, 0, 0.25)}
+.banner-txt {padding: 5vw; font-size: 5vw; bottom: 1vw; left: 1vw; font-family: "Anton", sans-serif; color: #fff; border: 1vw solid #fff; position: absolute;}
