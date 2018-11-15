@@ -10,7 +10,20 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0}
 /*
  * Banner Stuff
  */
-#top-banner {overflow: hidden; position: relative}
-img.banner {display: block; float: right; width: 75%}
-.img-cover.left {float: left; position: absolute; top: 0; bottom: 0; width: 50%; background-size: cover; clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%); box-shadow: inset 1px 0 3px rgba(0, 0, 0, 0.25)}
-.banner-txt {padding: 5vw; font-size: 5vw; bottom: 1vw; left: 1vw; font-family: "Anton", sans-serif; color: #fff; border: 1vw solid #fff; position: absolute;}
+.banner {overflow: hidden; position: relative;}
+.banner img {display: block; width: 100%}
+/* Image Cover */
+.img-cover {position: absolute; top: 0; bottom: 0; width: 50%; box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.25)}
+.img-cover.left {left: 0}
+.img-cover.right {right: 0}
+.img-cover.left.up {clip-path: polygon(0% 100%, 50% 100%, 100% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 50% 100%, 100% 0%, 0% 0%)}
+.img-cover.left.down {clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 100%, 50% 0%, 0% 0%)}
+.img-cover.right.up {clip-path: polygon(50% 100%, 100% 100%, 100% 0%, 0% 0%); -webkit-clip-path: polygon(50% 100%, 100% 100%, 100% 0%, 0% 0%)}
+.img-cover.right.down {clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 0%); -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 0%)}
+/* Banner Text */
+.banner-txt {padding: 5vw; font-size: 5vw; font-family: "Anton", sans-serif; color: #fff; border: 1vw solid #fff; position: absolute}
+.banner-txt p::selection {background: transparent; }
+.banner-txt.up {top: 1vw}
+.banner-txt.down {bottom: 1vw}
+.banner-txt.left {left: 1vw}
+.bannert-txt.right {right: 1vw}
