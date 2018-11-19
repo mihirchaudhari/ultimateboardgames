@@ -1,0 +1,17 @@
+.quote-container {display: flex; flex-wrap: wrap; justify-content: space-evenly; padding-top: 16px}
+.quote {width: calc(50% - 48px); background-color: #fff; border-radius: 4px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); padding: 16px; margin-bottom: 8px; transition: 0.3s}
+.quote .img {float: left; width: calc(25% - 17px); border-right: 1px solid #ccc; padding-right: 16px}
+.quote .img img {display: block; border-radius: 50%; width: 100%; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); transition: 0.3s}
+.quote .img img:hover {transform: scale(1.1)}
+.quote .txt {float: left; width: calc(75% - 32px); padding: 16px}
+.quote .name {float: left; width: calc(75% -32px); padding: 16px}
+
+@media only screen and (max-width: 1000px) {
+	.quote {width: calc(100% - 48px)}
+}
+
+@media only screen and (max-width: 380px) {
+	.quote .img {width: 100%; border-right: none}
+	.quote .txt {width: 100%}
+	.quote .name {width: 100%}
+}

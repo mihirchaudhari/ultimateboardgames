@@ -2,16 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ultimate Board Games</title>
 	<!-- Javascript -->
 	<script type="text/javascript"src="/docs/js/jquery.js" defer></script>
 	<script type="text/javascript" src="/docs/js/js.js" defer></script>
-	<script type="text/javascript" src="/docs/js/quote_card.js" defer></script>
-	<script type="text/javascript" src="index_instructions.js" defer></script>
+	<script type="text/javascript" src="/docs/js/quote.js" defer></script>
+	<script type="text/javascript" src="/docs/js/secret.js" defer></script>
 	<!-- CSS -->
 	<link type="text/css" rel="stylesheet" href="/docs/fontawesome/css/all.css">
 	<link type="text/css" rel="stylesheet" href="/docs/css/css.css">
-	<link type="text/css" rel="stylesheet" href="/docs/css/quote_card.css">
+	<link type="text/css" rel="stylesheet" href="/docs/css/quote.css">
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/docs/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/docs/favicon/favicon-32x32.png">
@@ -24,11 +25,58 @@
 <body>
 	<div id="top-nav"></div>
 	<div id="content">
-		<!-- Top Banner -->
-		<div id="top-banner" class="banner">
-			<img src="images/kattappa.png">
-			<div class="img-cover left down" style="background-color: #00b78f"></div>
-			<div class="banner-txt left down"><p>MIHIR'S MATH PROJECT</p></div>
+		<div class="parallax-group">
+			<!-- Top Banner -->
+			<div id="top-banner" class="banner section">
+				<img src="images/kattappa.png" onclick="imgClicked()">
+				<div class="img-cover left down" style="background-color: #00b78f"></div>
+				<div class="banner-txt left down"><p>MIHIR'S MATH PROJECT</p></div>
+			</div>
+			<!-- Quotes -->
+			<div id="quotes" class="quote-container section">
+				<div class="quote">
+					/images/people/mihir.jpg
+					The guy up there is Kattappa, not me
+					Mihir C.
+				</div>
+				<div class="quote">
+					/images/people/wang.jpg
+					Get me off this website, NOW!!!
+					Mr. Wang
+				</div>
+				<div class="quote">
+					/images/people/adarsh.jpg
+					Those who are right are also left. Hummus is among us all. True love comes from the spleen
+					Adarsh P.
+				</div>
+				<div class="quote">
+					/images/people/dhruv.jpg
+					Squirm, squirm, squirm, they call me...
+					Dhruv S.
+				</div>
+				<div class="quote">
+					/images/people/arnav.jpg
+					I sure do hope this gets quoted
+					Arnav P.
+				</div>
+				<div class="quote">
+					/images/people/tigger.png
+					People say that nothing is impossible. But I do nothing everyday
+					Winnie the Pooh
+				</div>
+			</div>
+		</div>
+		<div class="parallax-group">
+			<!-- Article -->
+			<div class="article section">
+				<h1>Random Article</h1>
+				<hr>
+				<p>Hello there, I am still testing stuff so I can do stuff later. If you like pie, please say hi.</p>
+			</div>
+			<!-- Bottom Banner -->
+			<div id="bottom-banner" class="banner section">
+				<img src="https://media1.tenor.com/images/95c7dec4c36a64ee24ec4e6c89f4ebe4/tenor.gif?itemid=9260063">
+			</div>
 		</div>
 	</div>
 </body>

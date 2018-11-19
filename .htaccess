@@ -1,0 +1,2 @@
+# Error pages
+ErrorDocument 404 /docs/pages/error/404.html
