@@ -8,7 +8,8 @@
 	<script type="text/javascript"src="/docs/js/jquery.js" defer></script>
 	<script type="text/javascript" src="/docs/js/js.js" defer></script>
 	<!-- This guys is messed up, "faction.js" as src doesn't work ._. -->
-	<script type="text/javascript" src="https://github.com/UltimateBoardGames/ultimateboardgames.github.io/blob/master/games/terra_mystica/faction.js" defer></script>
+	<!-- So I am instead going to embed it at the end -->
+	<!--<script type="text/javascript" src="https://github.com/UltimateBoardGames/ultimateboardgames.github.io/blob/master/games/terra_mystica/faction.js" defer></script>-->
 	<!-- CSS -->
 	<link type="text/css" rel="stylesheet" href="/docs/fontawesome/css/all.css">
 	<link type="text/css" rel="stylesheet" href="/docs/css/css.css">
@@ -160,5 +161,23 @@
 		<!-- Footer -->
 		<div id="footer"></div>
 	</div>
+	<script type="text/javascript">	
+	generateFactions();
+	function generateFactions() {
+		var $factions = $(".faction");
+		for (var i = 0; i < $factions.length; i++) {
+			//Store the card information in an array
+			var info = $factions[i].innerHTML.split("\n");
+			info = info.slice(1, info.length);
+			//Remove tabs
+			for (var j = 0 ; j < info.length; j++) {
+				while (info[j].indexOf("\t") != -1) {
+					info[j] = info[j].slice(info[j].indexOf("\t") + 1);
+				}
+			}
+			$factions[i].innerHTML = "<div class='header'><img src=" + info[0] + "><h1></h1></div><div class='body'><img src=" + info[3] + "><img src=" + info[4] + "></div><div class='flavor'><h1>" + info[1] + "</h1><p>" + info[2] + "</p></div>";
+		}
+	}
+	</script>
 </body>
 </html>
