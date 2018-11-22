@@ -11,7 +11,7 @@
 }
 
 @media only screen and (max-width: 380px) {
-	.quote .img {width: 100%; border-right: none}
+	.quote .img {width: 100%; border-right: none;}
 	.quote .txt {width: 100%}
 	.quote .name {width: 100%}
 }
