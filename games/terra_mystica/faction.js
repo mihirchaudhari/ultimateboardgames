@@ -13,5 +13,6 @@ function generateFactions() {
 			}
 		}
 		$factions[i].innerHTML = "<div class='header'><img src=" + info[0] + "><h1></h1></div><div class='body'><img src=" + info[3] + "><img src=" + info[4] + "></div><div class='flavor'><h1>" + info[1] + "</h1><p>" + info[2] + "</p></div>";
+		$(".faction:nth-child(" + (i + 1) + ") .body").css("background-color", $($factions[i]).attr("color"));
 	}
 }

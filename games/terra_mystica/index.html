@@ -7,25 +7,25 @@
 	<!-- Javascript -->
 	<script type="text/javascript"src="/docs/js/jquery.js" defer></script>
 	<script type="text/javascript" src="/docs/js/js.js" defer></script>
-	<!-- This guys is messed up, "faction.js" as src doesn't work ._. -->
 	<script type="text/javascript" src="faction.js" defer></script>
 	<!-- CSS -->
 	<link type="text/css" rel="stylesheet" href="/docs/fontawesome/css/all.css">
 	<link type="text/css" rel="stylesheet" href="/docs/css/css.css">
+	<link type="text/css" rel="stylesheet" href="/docs/css/download.css">
 	<style>
 		/* Style for faction cards */
 		#faction-container {display: flex; flex-wrap: wrap; justify-content: space-evenly; padding-top: 16px}
-		.faction {width: calc(25% - 16px); position: relative; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); margin-bottom: 64px;}
+		.faction {width: calc(25% - 16px); position: relative; box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25); margin-bottom: 64px; border-radius: 4px}
 		.faction .header {padding: 8px; text-align: right; background-color: #fff; border-radius: 4px 4px 0 0; display: flex; justify-content: flex-end;}
 		.faction .header img {display: block; width: 50%; position: absolute; left: 0px; transform: translateY(-50%); transition: 0.3s}
 		.faction:hover .header img {transform: translateY(-60%)}
-		.faction .header h1 {font-size: 1vw; padding: 16px}
-		.faction .body {padding: 16px}
+		.faction .body {padding: 16px; border-radius: 0 0 4px 4px}
 		.faction .body img:first-child {width: calc(35% - 8px); margin-right: 16px}
 		.faction .body img:last-child {width: calc(65% - 8px)}
-		.faction .flavor {position: absolute; right: 0; width: 40%; top: -64px; bottom: 0; background-color: #000e; padding: 16px; border-radius: 4px; transform: translateY(-16px); opacity: 0; overflow-y: scroll; transition: 0.3s; color: #fff;}
+		.faction .flavor {position: absolute; right: 0; width: 40%; top: -64px; bottom: 0; background-color: #000e; padding: 16px; border-radius: 4px; transform: translateY(-16px); opacity: 0; overflow-y: scroll; transition: 0.3s; color: #fff; font-family: sans-serif}
 		.faction:hover .flavor {opacity: 1; transform: translateY(0)}
-		.flavor h1 {font-size: 18px}
+		.flavor h1 {font-size: 18px; margin-bottom: 8px}
+		.flavor a {color: #fff}
 
 		@media only screen and (max-width: 1000px) {
 			.faction {width: calc(50% - 48px)}
@@ -54,107 +54,143 @@
 		<div class="article section">
 			<h1>Terra Mystica</h1>
 			<hr>
-			<p>Terra Mystica is a game.</p>
+			<p>
+				The conference of the Council of Elders had been interrupted by a deafening turmoil.
+				“The Witches! The Witches!” a young voice was shouting, and fists were knocking on the door of the assembly hall
+				at which the ancestors of the Chaos Magicians had met. Finally, the door had been opened, and a young female
+				magician came rushing into the hall. “I’ve seen them!” she was shouting while gasping for breath. The
+				stern looks of the elders made her pause. “How dare you break in on our conference?” the venerable spokeswoman of
+				the Council of Elders sharply rebuked the disturber. “And if this is really important, then talk to us reasonably.
+				What did you see?” Shara Nindée, the young Chaos Magician, took a deep breath and made herself report everything
+				that she saw, one thing at a time. “I’ve been to the south, on the edge of the forest. There’s Witches everywhere. They’re
+				riding their stupid broom sticks above our heads, then landing in the southern forest. And their numbers are still growing!
+				They’re about to settle here!” This was an unpleasant message indeed. The Council of Elders had just decided to cut down
+				the southern forest to redirect some lava streams there and transform that forestland into treeless wasteland – just
+				how they liked it. The teams for this task had already been formed. And now it seemed the Witches had preempted that. Witches were
+				a forest-dwelling people and as such, they had spread to a number of forests. Even worse– they used to plant trees where there
+				had been none to convert all land gradually to forest. What a nightmare for the Chaos Magicians who try hard to transform all land
+				into wasteland. Then Malkuzar, an old and wise Chaos Magician, spoke up. The reason they called him wise was that he had survived
+				five or more of his self-experiments. “There is nothing that can be done. It’s not necessarily bad for us to have neighbors, it’s
+				good for trading. When building our own settlements, we can save a lot of gold by trading.” Some of the elders nodded, others
+				looked doubtful. “But our people are ready to go and commence the groundwork,” argued the spokeswoman. “Shall we just give up?
+				We need more wasteland!” “Send Shara to the west, to the mountains,” Malkuzar suggested. “Usually, there are some underground lava
+				streams in the mountains that we can open up. Mountains are much easier to convert to wasteland than forests, any-
+				way. This is how we may preempt the Witches!” The decision was taken. “As to you, Shara...” The young magician had to
+				gulp when she met the serious look of the old Malkuzar. “As you’re so keen, I’ve got a mission for you. Immediately
+				travel to the west, to the mountains. Check if things are still calm over there. Dwarves are usually hanging around mountains.
+				That’s just what we need.
+			</p>
 		</div>
 		<!-- Races -->
 		<div id="faction-container" class="section">
-			<div class="faction">
+			<div class="faction" color="#17B322">
 				/images/terra_mystica/factions/auren.png
 				Auren
 				Auren are mysterious forest-dwelling people that are said to exist without a physical body. Unfortunately, one cannot prove this as you will never get to see them when wandering through the woods. When threatened or expecting relatives to visit, they simply blend with the trees and become invisible.
 				/images/terra_mystica/tiles/forest.png
 				/images/terra_mystica/abilities/auren.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#17B322">
 				/images/terra_mystica/factions/witches.png
 				Witches
 				Witches live in the woods, but they also dominate the air. Riding their brooms, they fly from place to place. This is why a forest that has never seen a Witch before all of a sudden may become full of Witches. Witches are sociable, so they gladly join up in large Witch towns, where they keep trading love potions and portable curses with each other.
 				/images/terra_mystica/tiles/forest.png
 				/images/terra_mystica/abilities/witches.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#000000">
 				/images/terra_mystica/factions/alchemists.png
 				Alchemists
 				Alchemists strive for a deeper knowledge of the elements forming the world and how to use them for their purposes. They know how to create gold – the process, however, is very elaborate and is only worth its while when you really need that gold. Alchemists prefer to settle in Swamps as these provide a steady supply of sulfur and other reagents.
 				/images/terra_mystica/tiles/swamp.png
 				/images/terra_mystica/abilities/alchemists.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#000000">
 				/images/terra_mystica/factions/darklings.png
 				Darklings
 				Darklings are said to be wicked and smarmy creatures that lure others into dangerous marshy hollows for fun, only to rob and then drown them. Only few have tried to verify these rumors. Darklings are fairly skilled in the elemental cults – that’s for sure. Their priests use their secret knowledge to bog even more land.
 				/images/terra_mystica/tiles/swamp.png
 				/images/terra_mystica/abilities/darklings.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#9E6F1E">
 				/images/terra_mystica/factions/halflings.png
 				Halflings
 				Halflings are nice little guys, not overly strong, intelligent, or apt in magic. So, hard work is their only way to achieve something in life. And with hard work, they achieve amazing things. Wherever a family of Halflings appears, the landscape will become flourishing farmland in a heartbeat – and this with only their own hands’ work.
 				/images/terra_mystica/tiles/farm.png
 				/images/terra_mystica/abilities/halflings.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#9E6F1E">
 				/images/terra_mystica/factions/cultists.png
 				Cultists
 				Cultists love rituals. Their entire life is based on strict rules. Even the simplest things are accompanied by secret symbols and invocations of the elements. For instance, when a Cultist wants to fill a bucket of water from a well, he first needs to appease the elements of earth and water which he is tearing apart, then he also needs to ensure the element of fire that he is not going to extinguish it with that water. This may seem overly elaborate, but the Cultists also greatly benefit from the power of the elements.
 				/images/terra_mystica/tiles/farm.png
 				/images/terra_mystica/abilities/cultists.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#949494">
 				/images/terra_mystica/factions/engineers.png
 				Engineers
 				Initially, Engineers have been a mountain tribe living in inaccessible valleys and ravines. They have learned how to build bridges and mountain roads to keep their remote settlements connected. They enjoy dominating nature by means of technology. They appear eccentric to the other factions when poring over their construction plans.
 				/images/terra_mystica/tiles/mountain.png
 				/images/terra_mystica/abilities/engineers.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#949494">
 				/images/terra_mystica/factions/dwarves.png
 				Dwarves
 				Dwarves are always on a hunt for treasures and valuable ores, thus engage in, non-stop burrowing in soil. Their mines are usually located in the mountains, but in the heat of digging, they sometimes end up digging underneath a neighboring area. Even if this is inhabited, its inhabitants most often will only notice when the Dwarves all of a sudden appear on the other side of that area. Dwarves go through so much soil that they are able to form new mountains from the spoil, so that future generations of Dwarves may dig through these all over again.
 				/images/terra_mystica/tiles/mountain.png
 				/images/terra_mystica/abilities/dwarves.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#1F6FF0">
 				/images/terra_mystica/factions/mermaids.png
 				Mermaids
 				Mermaids are lovely water creatures inhabiting the waters of Terra Mystica and traveling by its rivers. Deceived by their charm, many a landsman has forgotten that the Mermaids preferably would like to transform Terra Mystica into a world of water. Mermaids are able to split their fishtail into two legs and traverse through land; however, they only do so when going to flood it with water, or when they need building materials for their floating cities.
 				/images/terra_mystica/tiles/wetland.png
 				/images/terra_mystica/abilities/mermaids.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#1F6FF0">
 				/images/terra_mystica/factions/swarmlings.png
 				Swarmlings
 				From all the factions, Swarmlings are the most sociable one. They simply cannot bear loneliness. They always wander about in large groups, being in water most of the time, yet they get along on land just as well. And when a Swarmling needs a work done, he may be assured of the help from friends and relatives who will give strong support. This way they even get the toughest work done.
 				/images/terra_mystica/tiles/wetland.png
 				/images/terra_mystica/abilities/swarmlings.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#F01F1F">
 				/images/terra_mystica/factions/chaos_magicians.png
-				Chaos Magicians
-				Chaos Magicians appreciate the forces of destruction and  feel  the  best  when  in  dismal  wastelands. They worship fire and are always looking for underground lava streams that they try to force to erupt and hit the surface to transform even more land into wasteland. Chaos Magicians also have a certain power over time– they are able to freeze time for other people so they can wreak havoc undisturbed.
+				<a href="chaos_magicians.html">Chaos Magicians</a>
+				Chaos Magicians appreciate the forces of destruction and feel the best when in dismal wastelands. They worship fire and are always looking for underground lava streams that they try to force to erupt and hit the surface to transform even more land into wasteland. Chaos Magicians also have a certain power over time– they are able to freeze time for other people so they can wreak havoc undisturbed.
 				/images/terra_mystica/tiles/wasteland.png
 				/images/terra_mystica/abilities/chaos_magicians.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#F01F1F">
 				/images/terra_mystica/factions/giants.png
 				Giants
-				Giants  are  beings  of  enormous  size  and  physical strength. They can pull out trees or level out mountains with ease – as a matter of fact, they actually enjoy it. They are able to transform any landscape into wasteland in no time. Various Giants have already tried to transform land into something else, but it ended up being wasteland anyway. Apparently, they simply have no knack for the finer things.
+				Giants are beings of enormous size and physical strength. They can pull out trees or level out mountains with ease – as a matter of fact, they actually enjoy it. They are able to transform any landscape into wasteland in no time. Various Giants have already tried to transform land into something else, but it ended up being wasteland anyway. Apparently, they simply have no knack for the finer things.
 				/images/terra_mystica/tiles/wasteland.png
 				/images/terra_mystica/abilities/giants.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#EDED18">
 				/images/terra_mystica/factions/fakirs.png
 				Fakirs
 				Fakirs have reduced their physical needs to a minimum and tremendously improved their spiritual forces. Their spirit rules over matter in such a way that they are able to levitate things like carpets. Carpets are very convenient flying devices when you know how to operate them. In contrast to brooms, they are capable of transporting load. Fakirs prefer to live in deserts as these comply with their meditative lifestyle due to the desert’s considerable lack of plants and animals.
 				/images/terra_mystica/tiles/desert.png
 				/images/terra_mystica/abilities/fakirs.jpg
 			</div>
-			<div class="faction">
+			<div class="faction" color="#EDED18">
 				/images/terra_mystica/factions/nomads.png
 				Nomads
 				Nomads are a horse people of the desert. They used to be living in tents and always on the move. Even today, they build their dwellings using plain and light materials. This way they can populate large areas really quickly. Nomads only dwell in deserts, and their hordes of horsemen can cause a sand storm that may propagate to neighboring landscapes.
 				/images/terra_mystica/tiles/desert.png
 				/images/terra_mystica/abilities/nomads.jpg
+			</div>
+		</div>
+		<div class="video">
+			<iframe src="https://www.youtube.com/embed/2Yg2vIWCSmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="width:100vw;height:55vw" allowfullscreen></iframe>
+		</div>
+		<div class="download-container section">
+			<div class="download">
+				<a href="rules/rules.pdf" target="_blank"><i class="far fa-file"></i>Terra Mystica Rules</a>
+			</div>
+			<div class="download">
+				<a href="rules/fire_and_ice_rules.pdf" target="_blank"><i class="far fa-file"></i>Fire and Ice Rules</a>
 			</div>
 		</div>
 		<!-- Footer -->
