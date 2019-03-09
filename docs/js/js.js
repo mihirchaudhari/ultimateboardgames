@@ -7,7 +7,7 @@ function main() {
 
 function loadStuff() {
 	//Navigation
-	$("#top-nav").load("/docs/pages/top-nav.html");
+	$("#top-nav").load("/ultimateboardgames/docs/pages/top-nav.html");
 	//Footer
-	$("#footer").load("/docs/pages/footer.html");
+	$("#footer").load("/ultimateboardgames/docs/pages/footer.html");
 }
